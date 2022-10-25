@@ -1,6 +1,6 @@
-import  Button from "./components/atoms/Button"
-import  GlobalStyle  from "./components/atoms/GlobalStyle"
-import  Container  from "./components/atoms/Container"
+import  Button from "./components/Button"
+import  GlobalStyle  from "./components/GlobalStyle"
+import  Container  from "./components/Container"
 export {
     Button,
     GlobalStyle,
