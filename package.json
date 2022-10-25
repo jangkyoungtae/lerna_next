@@ -1,0 +1,23 @@
+{
+  "name": "@test/root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.0.1"
+  },
+  "scripts": {
+    "bootstrap": "npm install; npx lerna bootstrap;",
+    "package:admin": "npx lerna run --scope @test/admin --stream dev",
+    "start": "run-p --print-label package:*",
+    "build": "lerna run --parallel build"
+  },
+  "dependencies": {
+    "@types/next": "^9.0.0",
+    "@types/react": "^16.9.43",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^9.1.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
